@@ -208,7 +208,7 @@ struct ConfettiView: View{
     }
     
     func getAnimation() -> Animation {
-        return Animation.timingCurve(0.1, 0.8, 0, 1, duration: getAnimationDuration())
+        return Animation.timingCurve(0, 0, 1, 1, duration: getAnimationDuration())
     }
     
     func getDistance() -> CGFloat {
