@@ -241,7 +241,7 @@ struct ConfettiView: View{
                 }
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + getDelayBeforeRainAnimation()) {
-                    withAnimation(Animation.timingCurve(0.12, 0, 0.39, 0, duration: confettiConfig.rainAnimationDuration)) {
+                    withAnimation(Animation.timingCurve(0, 0, 1, 1, duration: confettiConfig.rainAnimationDuration)) {
                         opacity = confettiConfig.fadesOut ? 0 : confettiConfig.opacity
                     }
                 }
